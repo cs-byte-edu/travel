@@ -16,7 +16,7 @@ export class Carousel {
     if (this.carousel) {
       // this.carousel.style.transition = "transform 0.5s ease";
     }
-
+    this.slides[0]?.classList.add("active");
     this.bindEvents();
     this.updateActiveStateWithTransition();
   }

@@ -2,28 +2,26 @@ import "../../index.css";
 import { Carousel } from "./Carousel";
 import { toggle } from "./switcher";
 
+function intersectionCallback(entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+
+      // Uncomment for animation once
+      // observer.unobserve(entry.target);
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+}
+
+const ioOptions = {
+  threshold: 0.3,
+  // rootMargin: '0px 0px -50px 0px'
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   toggle();
-
-  new Carousel("#testimonial-container");
-
-  function intersectionCallback(entries) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-
-        // Uncomment for animation once
-        // observer.unobserve(entry.target);
-      } else {
-        entry.target.classList.remove("show");
-      }
-    });
-  }
-
-  const ioOptions = {
-    threshold: 0.3,
-    // rootMargin: '0px 0px -50px 0px'
-  };
 
   const blocks = document.querySelectorAll(".animated-box");
 
@@ -38,6 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
+  new Carousel("#testimonial-container");
+
   const logos = document.querySelector(".logos");
 
   if (logos) {
@@ -50,6 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// [...document.querySelectorAll("*")].forEach(
-//   (el) => (el.style.outline = "1px solid red")
-// );
+[...document.querySelectorAll("*")].forEach(
+  (el) => (el.style.outline = "1px solid red")
+);

@@ -5,12 +5,16 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>Travel</title>
+  <meta name="description"
+    content="Discover new countries and cultures, plan your next trip with the best offers from around the world. Guides, tours, travel tips for explorers.">
+  <meta name="keywords"
+    content="travel, tourism, tours, guides, trips, tourist destinations, travel tips, vacation, holidays">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;400;500;600;700&family=Roboto&family=Volkhov:wght@700&display=swap"
-    rel="stylesheet" />
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -52,7 +56,8 @@
           </ul>
         </nav>
         <div class="flex items-center gap-[45px] justify-between">
-          <button class="cursor-pointer">Login</button>
+          <button
+            class="rounded-[5px] border border-[var(--c-slate-dark)] p-[9px_22px_10px] leading-[1.25em] cursor-pointer hover:bg-[var(--c-orange)] hover:text-[var(--c-light)] hover:border-[var(--c-orange)]">Login</button>
           <button
             class="rounded-[5px] border border-[var(--c-slate-dark)] p-[9px_22px_10px] leading-[1.25em] cursor-pointer hover:bg-[var(--c-orange)] hover:text-[var(--c-light)] hover:border-[var(--c-orange)]">
             Sign up
@@ -96,7 +101,7 @@
         <div
           class="flex flex-col items-center justify-center md:justify-start sm:flex-row gap-6 lg:gap-[44px] text-[1.0625rem] leading-[1.4364rem]">
           <button
-            class="font-[Poppins] bg-[var(--c-orange)] text-[var(--c-light)] p-[19px_30px_18px] rounded-[10px] max-sm:w-full max-w-[343px] shadow-lg shadow-[var(--c-lavender)] cursor-pointer hover:opacity-75 hover:shadow-none">
+            class="font-[Poppins] bg-[var(--c-orange)] text-[var(--c-light)] p-[19px_30px_18px] rounded-[10px] max-sm:w-full max-w-[343px] shadow-lg [box-shadow:var(--shadow-orange)] cursor-pointer hover:opacity-75 hover:shadow-none">
             Find out more
           </button>
           <button
@@ -294,7 +299,7 @@
   </section>
 
   <!--  SECTION DESTINATION -->
-  <section class="w-[100%] mx-auto max-w-[75rem] pl-4 pr-[80px] overflow-hidden ">
+  <section class="w-[100%] mx-auto max-w-[75rem] pl-4 pr-[80px]">
     <div class="animated-box flex flex-col lg:flex-row lg:pt-[100px] pb-[72px]">
       <div class="flex flex-col basis-[55%] text-left">
         <p class="text-[1.125rem] font-[Poppins] text-[var(--c-steel-blue)]">
@@ -452,12 +457,12 @@
       <div class="flex-1">
         <div id="testimonial-wrapper" class="carousel-wrapper relative w-full">
           <div id="testimonial-container"
-            class="relative carousel-container pt-[40px] pl-[40px] pr-[120px] overflow-hidden h-[356px] w-full after:content-[''] after:block after:h-[60px] after:absolute after:bottom-0 after:right-0 after:left-0 after:bg-[linear-gradient(0deg,white,transparent)]">
+            class="relative carousel-container p-[40px] md:pr-[65px] xl:pr-[120px] overflow-hidden h-[356px] w-full after:content-[''] after:block after:h-[60px] after:absolute after:bottom-0 after:right-0 after:left-0 after:bg-[linear-gradient(0deg,white,transparent)]">
             <div
               class="carousel relative flex flex-col w-full transition ease-in-out duration-300 font-[Poppins] text-base text-[var(--c-gray)]">
               <!-- TESTIMONIAL SLIDE 1 -->
               <div
-                class="relative right-[-30px] slide bg-[var(--c-light)] translate-y-[-100px] scale-95 opacity-40 transition ease-out duration-[500] mb-[20px] [&.active]:right-auto [&.active]:translate-y-0 [&.active]:scale-100 [&.active]:w-full [&.active]:z-[10] [&.active]:opacity-100">
+                class="active relative right-[-30px] slide bg-[var(--c-light)] translate-y-[-100px] scale-95 opacity-40 transition ease-out duration-[500] mb-[20px] [&.active]:right-auto [&.active]:translate-y-0 [&.active]:scale-100 [&.active]:w-full [&.active]:z-[10] [&.active]:opacity-100">
                 <article class="relative p-[32px_56px_32px_32px] rounded-[10px] shadow-lg">
                   <img src="/src/img/ava-1.jpg" alt="avatar" width="68" height="68"
                     class="absolute top-[-30px] left-[-30px] w-[68px] h-[68px] rounded-full" />
@@ -517,17 +522,19 @@
             </div>
           </div>
           <div
-            class="absolute right-0 top-[50%] translate-y-[-50%] flex flex-col gap-[30px] lg:gap-[47px] xl:gap-[57px]">
-            <button class="flex items-center justify-center w-[40px] h-[40px] cursor-pointer" id="btn-prev"
-              title="Previous slide">
+            class="flex items-center justify-center z-10  md:absolute md:right-0 md:top-[50%] md:translate-y-[-50%] md:flex-col  gap-[30px] lg:gap-[47px] xl:gap-[57px]">
+            <button
+              class="flex items-center justify-center w-[40px] h-[40px] text-white md:text-[var(--c-slate-dark)] max-md:bg-[var(--c-cyan-900)] rounded-[4px] cursor-pointer [&.disabled]:opacity-30 [&.disabled]:cursor-auto"
+              id="btn-prev" title="Previous slide">
               <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 8.5L8 1.5L15 8.5" stroke="#3E2E4D" stroke-width="2" stroke-linecap="round" />
+                <path d="M1 8.5L8 1.5L15 8.5" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
               </svg>
             </button>
-            <button class="flex items-center justify-center w-[40px] h-[40px] cursor-pointer" id="btn-next"
-              title="Next slide">
+            <button
+              class="flex items-center justify-center w-[40px] h-[40px] text-white md:text-[var(--c-slate-dark)] max-md:bg-[var(--c-cyan-900)] rounded-[4px] cursor-pointer [&.disabled]:opacity-30 [&.disabled]:cursor-auto"
+              id="btn-next" title="Next slide">
               <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L8 8L15 1" stroke="#3E2E4D" stroke-width="2" stroke-linecap="round" />
+                <path d="M1 1L8 8L15 1" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
               </svg>
             </button>
           </div>
@@ -543,27 +550,23 @@
       <ul class="logos flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:block [&_img]:max-w-none 
       animate-slide group-hover:[animation-play-state:paused]">
         <li>
-          <img src="/src/img/axon.png" alt="axon logo" width="130" height="38" class="h-[35px] w-auto object-contain">
+          <img src="/src/img/axon.png" alt="axon logo" width="130" height="38" class="object-contain">
         </li>
 
         <li>
-          <img src="/src/img/jetstar.png" alt="jetstar logo" width="135" height="37"
-            class="h-[35px] w-auto object-contain">
+          <img src="/src/img/jetstar.png" alt="jetstar logo" width="130" height="38" class="object-contain">
         </li>
 
         <li>
-          <img src="/src/img/expedia.png" alt="expedia logo" width="162" height="69"
-            class="h-[35px] w-auto object-contain">
+          <img src="/src/img/expedia.png" alt="expedia logo" width="130" height="38" class="object-contain">
         </li>
 
         <li>
-          <img src="/src/img/quantas.png" alt="quantas logo" width="162" height="32"
-            class="h-[28px] w-auto object-contain">
+          <img src="/src/img/quantas.png" alt="quantas logo" width="130" height="38" class="object-contain">
         </li>
 
         <li>
-          <img src="/src/img/mitalia.png" alt="mitalia logo" width="94" height="21"
-            class="h-[28px] w-auto object-contain">
+          <img src="/src/img/mitalia.png" alt="mitalia logo" width="130" height="38" class="object-contain">
         </li>
       </ul>
     </div>
@@ -571,7 +574,7 @@
 
   <!-- SECTION SUBSCRIBE -->
   <section
-    class="before:content-[''] before:block before:w-[390px] before:h-[390px] before:absolute before:top-0 before:right-0 before:rotate-180 before:[background:url('/src/img/bg-subscribe.svg')_no-repeat_100%_0/100%] relative w-[100%] mx-auto max-w-[75rem] px-4 py-[50px] lg:py-[72px] bg-[var(--c-lavender)] [background-image:url('/src/img/bg-subscribe.svg')] bg-no-repeat [background-position:25px_125px] lg:rounded-[129px_20px_20px] lg:p-[80px]">
+    class="before:content-[''] before:block before:w-[390px] before:h-[390px] before:absolute before:top-0 before:right-0 before:rotate-180 before:[background:url('/src/img/bg-subscribe.svg')_no-repeat_100%_0/100%] before:z-[1] relative w-[100%] mx-auto max-w-[75rem] px-4 py-[50px] lg:py-[72px] bg-[var(--c-lavender)] [background-image:url('/src/img/bg-subscribe.svg')] bg-no-repeat [background-position:25px_125px] lg:rounded-[129px_20px_20px] lg:p-[80px]">
     <h2
       class="text-center p-[24px_16px] lg:mb-[75px] text-[1.25rem] lg:text-[2.0625rem] text-[var(--c-steel-blue)] max-w-[90%] lg:leading-[3.375rem]">
       Subscribe to
@@ -591,10 +594,10 @@
         <input type="text" placeholder="Your email" class="w-full h-[68px] rounded-[10px] pl-[50px] pr-4">
       </div>
       <button type="submit"
-        class="[background:var(--gradient-orange)] text-[var(--c-light)] leading-[1.25em] p-[22px_50px] cursor-pointer rounded-[10px]">Subscribe</button>
+        class="relative z-[2] [background:var(--gradient-orange)] hover:[box-shadow:var(--shadow-orange)] text-[var(--c-light)] leading-[1.25em] p-[22px_50px] cursor-pointer rounded-[10px]">Subscribe</button>
     </form>
     <button
-      class="absolute top-0 left-0 lg:top-[-25px] lg:right-[-25px] w-[70px] h-[70px] rounded-full flex items-center justify-center [background:var(--gradient-indigo)] hover:opacity-[0.7]">
+      class="absolute top-0 max-lg:left-0 lg:top-[-25px] lg:right-[-25px] w-[70px] h-[70px] rounded-full flex items-center justify-center [background:var(--gradient-indigo)] hover:opacity-[0.7]">
       <svg xmlns="http://www.w3.org/2000/svg" width="38" height="31" fill="none">
         <path fill="#fff"
           d="M36.61 1.99a3.305 3.305 0 0 1-.242 3.721L17.894 29.818a3.34 3.34 0 0 1-3.3 1.255 3.34 3.34 0 0 1-2.597-2.389l-2.733-9.729-.285-1.011-.734-.753L1.186 9.96a3.339 3.339 0 0 1-.77-3.445 3.342 3.342 0 0 1 2.737-2.23L33.267.34a3.305 3.305 0 0 1 3.343 1.65Z" />
@@ -631,7 +634,7 @@
       </div>
 
       <div
-        class="flex flex-col md:flex-row justify-between lg:gap-[50px] xl:gap-[68px] font-[Poppins] font-medium text-[1.125rem] text-[var(--c-steel-blue)] leading-[1.245em]">
+        class="flex flex-col md:flex-row justify-between lg:gap-[50px] xl:gap-[90px] font-[Poppins] font-medium text-[1.125rem] text-[var(--c-steel-blue)] leading-[1.245em]">
 
         <!-- COMPANY MENU -->
         <div class="">
