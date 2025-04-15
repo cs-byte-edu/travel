@@ -12,6 +12,9 @@ module.exports = {
       animation: {
         slide: "slide 15s linear infinite",
       },
+      fontFamily: {
+        Volkhov: ["Volkhov", "serif"],
+      },
     },
   },
   plugins: [],

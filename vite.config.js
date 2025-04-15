@@ -3,7 +3,7 @@ import path from "path";
 import glob from "fast-glob";
 import { fileURLToPath } from "url";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
-
+import htmlMinify from "vite-plugin-html-minify";
 // Get the directory name using import.meta.url
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -23,6 +23,7 @@ export default defineConfig({
       jpeg: { quality: 70 },
       jpg: { quality: 70 },
     }),
+    htmlMinify(),
   ],
   build: {
     rollupOptions: {
