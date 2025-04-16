@@ -16,7 +16,7 @@ function intersectionCallback(entries) {
 }
 
 const ioOptions = {
-  threshold: 0.3,
+  threshold: 0.2,
   // rootMargin: '0px 0px -50px 0px'
 };
 
@@ -49,7 +49,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
-
-[...document.querySelectorAll("*")].forEach(
-  (el) => (el.style.outline = "1px solid red")
-);
